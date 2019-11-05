@@ -13,6 +13,9 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		64757ED42371A2E800EB68C0 /* AlertControllerOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64757ED12371A2E800EB68C0 /* AlertControllerOptions.swift */; };
+		64757ED52371A2E800EB68C0 /* AlertControllerButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64757ED22371A2E800EB68C0 /* AlertControllerButtons.swift */; };
+		64757ED62371A2E800EB68C0 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64757ED32371A2E800EB68C0 /* AlertView.swift */; };
 		698EDF8962AE8BBB0082BBA8 /* Pods_AlertUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194763C4B145F02E48354E8B /* Pods_AlertUI_Example.framework */; };
 		DA4BDF38C8834D0D1B0303C9 /* Pods_AlertUI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693A5EA8F77E930FF54E21D9 /* Pods_AlertUI_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +45,9 @@
 		607FACE51AFB9204008FA782 /* AlertUI_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertUI_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		64757ED12371A2E800EB68C0 /* AlertControllerOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertControllerOptions.swift; path = ../../AlertUI/Classes/AlertControllerOptions.swift; sourceTree = "<group>"; };
+		64757ED22371A2E800EB68C0 /* AlertControllerButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertControllerButtons.swift; path = ../../AlertUI/Classes/AlertControllerButtons.swift; sourceTree = "<group>"; };
+		64757ED32371A2E800EB68C0 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertView.swift; path = ../../AlertUI/Classes/AlertView.swift; sourceTree = "<group>"; };
 		693A5EA8F77E930FF54E21D9 /* Pods_AlertUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlertUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		877670EB91E6900624EDE045 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		890FA536FE88A0A6E2C3FAA2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -72,6 +78,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				64757ED02371A28300EB68C0 /* Source */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for AlertUI */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -137,6 +144,16 @@
 				877670EB91E6900624EDE045 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		64757ED02371A28300EB68C0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				64757ED22371A2E800EB68C0 /* AlertControllerButtons.swift */,
+				64757ED12371A2E800EB68C0 /* AlertControllerOptions.swift */,
+				64757ED32371A2E800EB68C0 /* AlertView.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		99F4173DEF2339C41ABBB964 /* Frameworks */ = {
@@ -212,10 +229,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7X2KJ7S3VX;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7X2KJ7S3VX;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -331,8 +350,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64757ED62371A2E800EB68C0 /* AlertView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				64757ED52371A2E800EB68C0 /* AlertControllerButtons.swift in Sources */,
+				64757ED42371A2E800EB68C0 /* AlertControllerOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +502,7 @@
 			baseConfigurationReference = 4D1C627D9F16E38916E13D60 /* Pods-AlertUI_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7X2KJ7S3VX;
 				INFOPLIST_FILE = AlertUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -495,6 +518,7 @@
 			baseConfigurationReference = 4A6C9AD06756F30F19C9815A /* Pods-AlertUI_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7X2KJ7S3VX;
 				INFOPLIST_FILE = AlertUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -509,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 428F0FD7AF5AD32B63A3BEC2 /* Pods-AlertUI_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7X2KJ7S3VX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -531,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94D13F77D7BE98D8AE049A58 /* Pods-AlertUI_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7X2KJ7S3VX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
