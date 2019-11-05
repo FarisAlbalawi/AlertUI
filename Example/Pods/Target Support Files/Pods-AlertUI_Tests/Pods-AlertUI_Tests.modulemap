@@ -1,0 +1,6 @@
+framework module Pods_AlertUI_Tests {
+  umbrella header "Pods-AlertUI_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

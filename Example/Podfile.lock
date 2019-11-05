@@ -1,0 +1,16 @@
+PODS:
+  - AlertUI (0.1.0)
+
+DEPENDENCIES:
+  - AlertUI (from `../`)
+
+EXTERNAL SOURCES:
+  AlertUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AlertUI: 9abf910fdea3d45a6dcd56ee9282d83500a37a94
+
+PODFILE CHECKSUM: 0eec5724445f4c3e6dea3ed0161f9dd2c6abe6bf
+
+COCOAPODS: 1.8.4

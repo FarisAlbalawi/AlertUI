@@ -1,0 +1,6 @@
+framework module AlertUI {
+  umbrella header "AlertUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
