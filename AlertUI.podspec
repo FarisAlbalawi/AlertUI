@@ -6,24 +6,16 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
-
-pod repo push AlertUI.podspec
-
 Pod::Spec.new do |s|
   s.name             = 'AlertUI'
   s.version          = '0.1.0'
   s.swift_version    = '5'
-  s.summary          = 'AlertUI.'
+  s.summary          = 'Awesome AlertUI'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-Advanced of Alert with Image, Icons, Title, Messages, Buttons, and awesome design.
-                       DESC
+  
+    s.description      = <<-DESC
+    'Advanced of Alert with Image, Icons, Title, Messages, Buttons, and awesome design.'.
+        DESC
 
   s.homepage         = 'https://github.com/FarisAlbalawi/AlertUI'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
