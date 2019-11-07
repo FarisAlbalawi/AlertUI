@@ -91,8 +91,6 @@ class AlertControllerOptions: UIViewController {
         Button.setTitleColor(.black, for: .normal)
         Button.titleLabel?.font = UIFont.systemFont(ofSize: 25, weight: UIFont.Weight.black)
         Button.backgroundColor = UIColor(red: 0.9412, green: 0.9412, blue: 0.9451, alpha: 1.0)
-        Button.layer.borderColor = UIColor(red: 0.9412, green: 0.9412, blue: 0.9451, alpha: 1.0).cgColor
-        Button.layer.borderWidth = 3
         Button.layer.cornerRadius = 22.5
         Button.translatesAutoresizingMaskIntoConstraints = false
         Button.addTarget(self, action:#selector(didPressCancelButton(_:)), for: UIControl.Event.touchUpInside)
@@ -255,7 +253,7 @@ class AlertControllerOptions: UIViewController {
             }
         }
         
-        if Message == nil && Title == nil {
+        if Message == nil && Title == nil && icons != nil {
             self.lineView.isHidden = true
             self.lineView.isHidden = true
         }

@@ -17,7 +17,6 @@
 		8D4B55C2C08084A4AF4B3EDB32985616 /* Pods-AlertUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F703CA712E23BA27BA9372806C5A65 /* Pods-AlertUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92FAFB5CC5E718F8D37CE1887CC14A62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A5D8B47AFA7B142B0B1D9A4A32FF3E10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B074EF82316DE5C10F5888D98D8B2D43 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FDB6C496E2E30EA2689B8F0FA9ABA9 /* ReplaceMe.swift */; };
 		DA0C7BEE9CE0D715644788E7F32D1726 /* Pods-AlertUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B74CD2209CCF2D50EAD32989D05A6E0D /* Pods-AlertUI_Example-dummy.m */; };
 		DFAC52D73488AC1C8383F97AC0FEFB62 /* AlertUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7986705E976BCC65D3974980346D77E2 /* AlertUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -48,7 +47,6 @@
 		3C416C05E867B2760F11C6FA844F443D /* Pods-AlertUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AlertUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		409F13C3269A7EBE73E945E4334BACC9 /* Pods-AlertUI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AlertUI_Example-Info.plist"; sourceTree = "<group>"; };
 		43B9C78E7A80301D84E2150CB5BF5A81 /* AlertUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AlertUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		47FDB6C496E2E30EA2689B8F0FA9ABA9 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = AlertUI/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		4EBFD7603403E922F08E2891CD075C34 /* Pods-AlertUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlertUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		590B584AFFA962E04B26FA2E07B9209F /* Pods-AlertUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlertUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A2F9468AEEF7E98E29CA92616BD69AD /* AlertUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AlertUI-Info.plist"; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 		65CFECE3AED1F1B0236726CC22B85CEB /* AlertUI */ = {
 			isa = PBXGroup;
 			children = (
-				47FDB6C496E2E30EA2689B8F0FA9ABA9 /* ReplaceMe.swift */,
 				573845368683A10985706DCFB2D7DB2B /* Pod */,
 				E535A3F54150EB149DACE5F1926E1B2E /* Support Files */,
 				64757EC823714F6B00EB68C0 /* AlertControllerOptions.swift */,
@@ -392,7 +389,6 @@
 			files = (
 				64757ECF23717FAD00EB68C0 /* AlertView.swift in Sources */,
 				431672DF7857DA14B45E0DCA4E71309A /* AlertUI-dummy.m in Sources */,
-				B074EF82316DE5C10F5888D98D8B2D43 /* ReplaceMe.swift in Sources */,
 				64757ECB2371732200EB68C0 /* AlertControllerButtons.swift in Sources */,
 				64757EC923714F6B00EB68C0 /* AlertControllerOptions.swift in Sources */,
 			);

@@ -30,7 +30,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
  
 ## Installation
-AlertUI is available through [CocoaPods](https://cocoapods.org). To install
+AlertUI is available through [CocoaPods](https://cocoapods.org/pods/AlertUI). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -106,7 +106,7 @@ DismissTitleColor: UIColor?,
 actions: [AlertActionButtons]?)
 ``` 
 
-## show Alert with only message and images:
+## Show Alert with only message and image:
 ```swift
 func showAlert(
 icons: UIImage?,
@@ -126,9 +126,3 @@ developer.faris@gmail.com
 
 ## License
 AlertUI is available under the MIT license. See the LICENSE file for more info.
-
-
-
-
-
-
