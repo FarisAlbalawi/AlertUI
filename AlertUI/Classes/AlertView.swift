@@ -91,6 +91,9 @@ class AlertView: UIViewController {
         super.viewDidLoad()
 
             // MARK: Subview
+           self.AlertView.layer.cornerRadius = 20
+           self.AlertView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
             self.view.addSubview(AlertView)
             self.AlertView.addSubview(buttonDismiss)
             self.AlertView.addSubview(IconsStackView)
@@ -128,6 +131,18 @@ class AlertView: UIViewController {
                 self.buttonDismiss.bottomAnchor.constraint(equalTo: self.AlertView.bottomAnchor,constant: -25),
             ])
         
+        
+        if let first = self.presentingViewController {
+            let background = UIView()
+            background.alpha = 0
+            background.tag = 100
+            first.view.addSubview(background)
+            background.frame = first.view.frame
+            background.backgroundColor = .black
+            UIView.animate(withDuration: 0.5, animations: {
+                background.alpha = 0.5
+            })
+        }
         
 
         
@@ -200,6 +215,21 @@ class AlertView: UIViewController {
     // MARK: Dismiss button
     @objc func didPressDoneButton(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
+        if let first = self.presentingViewController {
+            for subview in first.view.subviews {
+                UIView.animate(withDuration: 0.5, animations: {
+                    if (subview.tag == 100) {
+                            subview.alpha = 0
+                        }
+                    }, completion: { (finished: Bool) in
+                        if finished{
+                            if (subview.tag == 100) {
+                                subview.removeFromSuperview()
+                            }
+                        }
+                })
+            }
+        }
     
     }
     
@@ -230,7 +260,7 @@ public extension UIViewController {
         alertVC.DismissColor = DismissColor
         alertVC.DismissTitleColor = DismissTitleColor
         alertVC.modalTransitionStyle = .coverVertical
-        alertVC.modalPresentationStyle = .popover
+        alertVC.modalPresentationStyle = .custom
         self.present(alertVC, animated: true, completion: nil)
         
         

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AlertUI'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.swift_version    = '5'
   s.summary          = 'Awesome AlertUI'
 
