@@ -122,7 +122,7 @@ DismissTitleColor: UIColor?)
 
 ## Author
 Faris Albalawi,
-developer.faris@gmail.com
+FA.FarisAlbalawi@gmail.com
 
 ## License
 AlertUI is available under the MIT license. See the LICENSE file for more info.
